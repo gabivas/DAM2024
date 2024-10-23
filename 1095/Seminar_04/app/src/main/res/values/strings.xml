@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Seminar_03_1095</string>
+    <string-array name="categoriiBilete">
+        <item>CAT1</item>
+        <item>CAT2</item>
+        <item>VIP</item>
+    </string-array>
+</resources>

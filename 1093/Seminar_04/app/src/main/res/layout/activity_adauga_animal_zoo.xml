@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdaugaAnimalZooActivity">
+
+    <EditText
+        android:id="@+id/etSpecie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduceti specia:"
+        android:text="Pisica"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etGreutate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduceti greutatea:"
+        android:text="2"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSpecie" />
+
+    <EditText
+        android:id="@+id/etVarsta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduceti varsta:"
+        android:text="2"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGreutate" />
+
+    <EditText
+        android:id="@+id/etTaraOrigine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduceti tara de origine:"
+        android:text="Romania"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etVarsta" />
+
+    <EditText
+        android:id="@+id/etDataNastere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduceti data nasterii:"
+        android:text="23/10/2021"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTaraOrigine" />
+
+    <Spinner
+        android:id="@+id/spnStilAlimentar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNastere" />
+
+    <RadioGroup
+        android:id="@+id/rgSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnStilAlimentar">
+
+        <RadioButton
+            android:id="@+id/rbMascul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MASCUL" />
+
+        <RadioButton
+            android:id="@+id/rbFemela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="FEMELA" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSalveazaAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgSex" />
+</androidx.constraintlayout.widget.ConstraintLayout>
