@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Seminar_03_1093</string>
+    <string name="LOCAL">local</string>
+    <string-array name="stilAlimentar">
+        <item>CARNIVOR</item>
+        <item>IERBIVOR</item>
+        <item>OMNIVOR</item>
+    </string-array>
+</resources>
